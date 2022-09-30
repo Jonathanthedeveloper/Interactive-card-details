@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img class="background-img" src="images/bg-main-desktop.png" alt="" />
+    <section>
+      <div class="row">
+        <div class="col col-lg-6">
+          <div class="card-design-container">
+            <div>
+              <svg
+                width="84"
+                height="47"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <ellipse
+                  cx="23.478"
+                  cy="23.5"
+                  rx="23.478"
+                  ry="23.5"
+                  fill="#fff"
+                />
+                <path
+                  d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+                  stroke="#fff"
+                />
+              </svg>
+              <img class="front-img" src="images/bg-card-front.png" alt="" />
+              <p class="card-number">0000 0000 0000 0000</p>
+              <p class="card-name">Jane Appleseed</p>
+              <p class="card-exp">
+                <span class="card-exp-d">00</span><span>/</span
+                ><span class="card-exp-year">00</span>
+              </p>
+            </div>
+            <div>
+              <img class="back-img" src="images/bg-card-back.png" alt="" />
+              <p class="cvc-no">000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <!-- sucess message -->
+          <div class="sucess-message hide-content">
+            <svg
+            
+              width="80"
+              height="80"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="40" cy="40" r="40" fill="url(#a)" />
+              <path
+                d="M28 39.92 36.08 48l16-16"
+                stroke="#fff"
+                stroke-width="3"
+              />
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1="-23.014"
+                  y1="11.507"
+                  x2="0"
+                  y2="91.507"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#6348FE" />
+                  <stop offset="1" stop-color="#610595" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <h1>THANK YOU!</h1>
+            <p>We've added your card details</p>
+            <a href="index.html">Continue</a>
+          </div>
+
+          <!-- form -->
+
+          <div class="form-contain  ">
+            <label class="full-text" for="cardholder-name"
+              >Cardholder Name</label
+            >
+            <input
+              class="full inputname"
+              type="text "
+              id="cardholder-name"
+              placeholder="e.g. Jane Appleseed"
+            />
+            <p class="hidden error error--0">Can't be blank</p>
+
+            <label class="full-text" for="card-number">Card Number</label>
+            <input
+              class="full inputcardnum"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{13,19}"
+              name=""
+              id="card-number"
+              placeholder="e.g. 1234 5678 9123 0000"
+            />
+            <p class="hidden error error--1">Wrong format numbers only</p>
+
+            <label class="exp-text" for="exp-date">Exp. Date (MM/YY)</label>
+            <label class="cvc-text" for="cvc"> CVC</label><br />
+            <input
+              class="exp inputmonth"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{2}"
+              placeholder="MM"
+            />
+            <input
+              class="exp expedge inputyear"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{2}"
+              placeholder="YY"
+            />
+            <input
+              class="cvc input-cvc"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{3,6,7}"
+              placeholder="e.g. 123"
+            />
+            <p class="hidden error error--2 error--3 second">Can't be blank</p>
+            <p class="hidden error error--4 third">Can't be blank</p>
+            <button>Confirm</button>
+          </div>
+        </div>
+      </div>
+      
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://twitter.com/err_or_man">Jonathan</a>.
+    </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+<!-- <label for="ccn">Credit Card Number:</label>
+<input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"> -->

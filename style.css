@@ -1,0 +1,190 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+section{
+    padding: 10% 15%;
+}
+section p {
+    letter-spacing: 10;
+}
+
+.card-design-container p{
+    position: relative;
+    color: #fff;
+    width: fit-content;
+}
+
+.card-number {
+    top: -7.5rem;
+    left: 6rem;
+}
+
+.card-name {
+    top: -6rem;
+    left: -1rem;
+}
+.card-exp {
+    top: -8.5rem;
+    left: 20.5rem;
+}
+.cvc-no {
+    top: -13.5rem;
+    left: 25rem;
+}
+.background-img {
+    position: absolute;
+    z-index: -1;
+}
+
+.front-img, .back-img {
+    position: relative;
+}
+
+.front-img {
+    right: 3rem;
+}
+
+.back-img {
+    left: 3rem;
+    top: -5rem;
+}
+
+svg {
+    position: absolute;
+    z-index: 1;
+    top: 12rem;
+}
+
+/* form */
+
+label {
+    display: block;
+    color: hsl(278, 68%, 11%);
+    font-weight: 700;
+    margin: 1rem 0 0.4rem;
+}
+input {
+    display: block;
+    border: 1px solid hsl(279, 6%, 55%);
+    height: 2.8rem;
+    border-radius: 5px;
+}
+
+.form-contain {
+    background-color: #fff;
+    width: 80%;
+    margin-top: 3rem;
+    
+}
+
+.full {
+    width: 100%;
+    margin: auto;
+}
+
+.full-text {
+    font-size: 1.3rem;
+}
+button {
+    margin-top: 2.5rem;
+    background-color: hsl(278, 68%, 11%);
+    width: 100%;
+    height: 2.8rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.exp-text, .cvc-text {
+    display: inline-block;
+}
+
+.exp {
+    width: 23%;
+    display: inline-block;
+   
+}
+
+.expedge {
+    margin-right: 2%;
+}
+
+.cvc  {
+    width: 46%;
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.exp-text {
+    margin-right: 18%;
+}
+
+p.error {
+    color: #f00;
+}
+.second , .third{
+    display: inline-block;
+}
+
+.second {
+    margin-right: 25%;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+/* 
+input:focus {
+    background-color: #f00;
+} */
+
+/* .sucess-message */
+.sucess-message {
+    all: unset;
+    text-align: center;
+    width: 80%;
+}
+
+.sucess-message svg {
+    width: 80px;
+    margin-left: 15%;
+}
+
+.sucess-message a {
+    background-color: hsl(278, 68%, 11%);
+    text-decoration: none;
+    color: #fff;
+    margin-top: 2.5rem;
+    padding: 1rem 12rem;
+    border-radius: 5px;
+    margin-left: 11%;
+}
+
+.sucess-message h1 {
+    font-weight: 700;
+    margin-top: 25%;
+}
+
+.sucess-message p {
+    margin-bottom: 4rem;
+}
+
+.hide-content {
+    display: none;
+    visibility: hidden;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
